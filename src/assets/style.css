@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Font";
-  src: url("./assets/JetBrains.ttf");
+  src: url("./JetBrains.ttf");
 }
 
 html {
@@ -13,7 +13,7 @@ html {
   justify-content: center;
 }
 
-#yatakodasi {
+#app {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -22,18 +22,17 @@ html {
   color: #ffffff;
 }
 
-#arkaplan1 {
+#background1 {
   display: flex;
   margin-right: 1em;
   background: #0f0f0f;
-  width: 920px;
   border-radius: 15px;
   padding: 1em;
   font-family: Font;
   box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.6), 0px 15px 15px rgba(0, 0, 0, 0.3), 0px 30px 50px rgba(0, 0, 0, 0.4), 0px -5px 10px rgba(0, 0, 0, 0.15);
 }
 
-#arkaplan2 {
+#background2 {
   display: flex;
   background: #0f0f0f;
   border-radius: 15px;
@@ -42,7 +41,7 @@ html {
   box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.6), 0px 15px 15px rgba(0, 0, 0, 0.3), 0px 30px 50px rgba(0, 0, 0, 0.4), 0px -5px 10px rgba(0, 0, 0, 0.15);
 }
 
-#arkaplan3 {
+#background3 {
   background: #ffffff;
   border-radius: 15px;
   border: 0px solid #ffffff;;
@@ -67,11 +66,11 @@ html {
   border-radius: 15px;
 }
 
-#dugme {
+#searchButton {
   width: 55px;
   height: 55px;
   border-radius: 0px 15px 15px 0px;
-  background: #151515 url("./assets/search.png") no-repeat;
+  background: #151515 url("./search.png") no-repeat;
   background-size: 26px;
   background-position: center;
   border: none;
@@ -80,9 +79,9 @@ html {
   margin-top: 530px;
 }
 
-#asukabody1 {
+#reibody1 {
   height: 600px;
-  width: 340px;
+  width: 290px;
   margin: auto;
   margin-right: 1em;
   display: block;  
@@ -90,9 +89,9 @@ html {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#asukabody2 {
+#reibody2 {
   height: 600px;
-  width: 400px;
+  width: 290px;
   margin: auto;
   display: block;  
   border-radius: 13px;
@@ -104,15 +103,6 @@ nav {
   grid-template-columns: 1fr 1fr;
   min-width: 24em;
   grid-auto-rows: max-content;
-}
-
-#baslik {
-  font-size: 2.2em;
-  padding-left: 20px;
-  font-weight: 600;
-  grid-column: 1/-1;
-  text-align: center;
-  margin-bottom: 0;
 }
 
 h1 {

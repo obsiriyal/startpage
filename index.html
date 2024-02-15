@@ -1,63 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <title>Asuka</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuka</title>
+    <link rel="stylesheet" href="./src/assets/main.css">
+    <link rel="icon" href="./src/assets/asuka_logo_by_art_des_tests_d5mee9x-fullview.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
 
-<body>
-  <div id="yatakodasi">
-    <div id="arkaplan1">
-      <div class="image">
-        <img id="asukabody1" alt="asuka" src="./assets/asuka1.jpg">
-      </div>
-      <nav>
-        <h1 id="baslik">Whatever Happens Happens</h1>
-        <h2 id="tarih"></h2>
-        <ul>
-          <li>General</li>
-          <li><a href="https://mail.google.com">Gmail</a></li>
-          <li><a href="https://tr.pinterest.com/">Pinterest</a></li>
-          <li><a href="https://open.spotify.com/intl-tr">Spotify</a></li>
-          <li><a href=""></a></li>
-          <li><a href="https://www.youtube.com/">Youtube</a></li>
-        </ul>
-        <ul>
-          <li>Anime</li>
-          <li><a href="https://animecix.net/">AnimeciX</a></li>
-          <li><a href="https://diziwatch.net/">Diziwatch</a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href="https://myanimelist.net/profile/obsidian__fury">MyAnimeList</a></li>
-        </ul>
-        <ul>
-          <li>Games</li>
-          <li><a href="https://aternos.org/servers/">Aternos</a></li>
-          <li><a href="https://store.epicgames.com/en-US/">Epic</a></li>  
-          <li><a href="https://www.gog.com">Gog</a></li>
-          <li><a href=""></a></li>
-          <li><a href="steam://open/main"></a></li>
-        </ul>
-        <ul>
-          <li>Other</li>
-          <li><a href="https://chat.openai.com">ChatGPT</a></li>
-          <li><a href="https://c.ai/c/FSLQDzZILkc9rc6nSS7Fjpp9X073M-xZDU3Qxp_XSIo">C.Aİ</a></li>
-          <li><a href="https://github.com/obsiriyal">Github</a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-        <div id="arkaplan3">
-          <input id="display" placeholder="..." onkeydown="if (event.key === 'Enter') aramaYap()">
+  <body>
+    <div id="app">
+      <div id="background1">
+        <div class="image">
+          <img id="asuka1" alt="Asuka1" src="./src/assets/asuka1.jpg">
         </div>
-        <button id="dugme" onclick="aramaYap()"></button>
-      </nav>
+        <nav>
+          <h1 id="baslik">Whatever Happens Happens</h1>
+          <h2 id="date"></h2>
+          <ul>
+            <li>General</li>
+            <li><a :href="general.Gmail">Gmail</a></li>
+            <li><a :href="general.Pinterest">Pinterest</a></li>
+            <li><a :href="general.Spotify">Spotify</a></li>
+            <li><a :href="general.Youtube">Youtube</a></li>
+          </ul>
+          <ul>
+            <li>Anime</li>
+            <li><a :href="anime.AnimeciX">AnimeciX</a></li>
+            <li><a :href="anime.DiziWatch">DiziWatch</a></li>
+            <li><a :href="anime.MyAnimeList">MyAnimeList</a></li>
+          </ul>
+          <ul>
+            <li>Games</li>
+            <li><a :href="games.Aternos">Aternos</a></li>
+            <li><a :href="games.Epic">Epic</a></li>
+            <li><a :href="games.Steam">Steam</a></li>
+            <li><a :href="games.Gog">Gog</a></li>
+          </ul>
+          <ul>
+            <li>Other</li>
+            <li><a :href="other.ChatGPT">ChatGPT</a></li>
+            <li><a :href="other.Cai">C.Aİ</a></li>
+            <li><a :href="other.Github">Github</a></li>
+          </ul>
+          <div id="background3">
+            <input id="display" placeholder="..." onkeydown="if (event.key === 'Enter') WebSearch()">
+          </div>
+          <button id="searchButton" onclick="WebSearch()"></button>
+        </nav>
+      </div>
+      <div id="background2">
+        <img id="asuka2" src="./src/assets/asuka2.jpg" alt="Asuka2">
+      </div>
     </div>
-    <div id="arkaplan2">
-      <img id="asukabody2" src="./assets/asuka2.jpg" alt="asuka">
-    </div>
-  </div>
+  </body>
 
-  <script src="index.js"></script>
-</body>
+<script src="./src/main.js"></script>
 </html>
