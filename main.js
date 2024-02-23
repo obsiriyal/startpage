@@ -1,36 +1,3 @@
-// Vue
-const { createApp } = Vue
-
-createApp({
-    data() {
-        return{
-            general: {
-                Gmail:       "https://gmail.com",
-                Pinterest:   "https://tr.pinterest.com",
-                Spotify:     "https://open.spotify.com",
-                Youtube:     "https://www.youtube.com"
-            },
-            anime: {
-                AnimeciX:    "https://animecix.net",
-                DiziWatch:   "https://diziwatch.net",
-                MyAnimeList: "https://myanimelist.net/profile/obsidian__fury"
-            },
-            games: {
-                Aternos:     "https://aternos.org/servers",
-                Epic:        "https://store.epicgames.com",
-                Steam:       "steam://open/library",
-                Gog:         "https://www.gog.com/"
-            },
-            other: {
-                ChatGPT:     "https://chat.openai.com",
-                Cai:         "https://c.ai/c/FSLQDzZILkc9rc6nSS7Fjpp9X073M-xZDU3Qxp_XSIo",
-                Github:      "https://github.com/obsiriyal"
-            }
-        }
-    }
-}).mount('#app')
-
-
 // date and time
 function showTime() {
 	const date = new Date();
@@ -51,10 +18,9 @@ function showTime() {
 
 showTime();
 
-
 // web search
 function WebSearch() {
-    let inputText = document.getElementById("display").value.trim();
+    let inputText = document.getElementById("searchText").value.trim();
 
     if (inputText === "") {
         alert("It won't be empty.");
@@ -131,6 +97,6 @@ function WebSearch() {
 
 // display focus
 window.onload = function() {
-    document.getElementById("display").focus();
+    document.getElementById("searchText").focus();
 
 };
